@@ -11,9 +11,10 @@ const CategoriasProvider = ({children}) => {
     try {
         const url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
 
-        const { data } = await axios(url);
+        const data  = await fetch(url);
+        const resultado = await data.json()
 
-        setCategorias(data.drinks)
+        setCategorias(resultado.drinks)
 
     } catch (error) {
         console.log(error)
