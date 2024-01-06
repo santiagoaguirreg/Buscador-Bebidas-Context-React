@@ -55,6 +55,8 @@ const Formulario = () => {
             <Form.Group className='mb-3'>
                     <Form.Label htmlFor='categoria'>Categoría Bebida</Form.Label>
 
+
+
                     <Form.Select
                       id="categoria"
                       name="categoria"

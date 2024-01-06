@@ -7,7 +7,7 @@ const {ModalShow, handleBebidaIdClick} = useBebidas()
 
   return (
     <Col md={6} lg={3}>
-       <Card className='mb-4'>
+       <Card className='mb-2 mt-5'>
           <Card.Img 
           variant='top'
           src={bebida.strDrinkThumb}
